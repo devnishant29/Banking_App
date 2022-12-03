@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 
 class Loan extends StatefulWidget {
@@ -60,7 +62,7 @@ class _LoanState extends State<Loan> {
                               Container(
                                 padding: EdgeInsets.all(20),
                                 child: Text(
-                                  'Personl Loan',
+                                  'Personal Loan',
                                   style: TextStyle(
                                       color: Colors.grey.shade300, fontSize: 15),
                                 ),
@@ -68,7 +70,7 @@ class _LoanState extends State<Loan> {
                               IconButton(
                                   color: Colors.grey.shade300,
                                   onPressed: () {
-                                    Navigator.pushNamed(context, 'details');
+                                    Navigator.pushNamed(context, 'personal');
                                   },
                                   icon: Icon(
                                     Icons.arrow_forward,
@@ -77,7 +79,7 @@ class _LoanState extends State<Loan> {
                           ),
                         ),
                         onTap: () {
-                          Navigator.pushNamed(context, 'details');
+                          Navigator.pushNamed(context, 'personal');
                         },
                       ),
                       SizedBox(
@@ -111,7 +113,7 @@ class _LoanState extends State<Loan> {
                               IconButton(
                                   color: Colors.grey.shade300,
                                   onPressed: () {
-                                    Navigator.pushNamed(context, 'newAccount');
+                                    Navigator.pushNamed(context, 'education');
                                   },
                                   icon: Icon(
                                     Icons.arrow_forward,
@@ -120,7 +122,7 @@ class _LoanState extends State<Loan> {
                           ),
                         ),
                         onTap: () {
-                          Navigator.pushNamed(context, 'newAccount');
+                          Navigator.pushNamed(context, 'education');
                         },
                       ),
                       SizedBox(
@@ -206,7 +208,7 @@ class _LoanState extends State<Loan> {
                           ),
                         ),
                         onTap: () {
-                          Navigator.pushNamed(context, 'loan');
+                          Navigator.pushNamed(context, 'business');
                         },
                       ),
                       SizedBox(

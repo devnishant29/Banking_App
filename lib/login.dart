@@ -185,7 +185,8 @@ class _MyLoginState extends State<MyLogin> {
                                         color: Color.fromARGB(255, 0, 183, 255),
                                         fontSize: 15,
                                       ),
-                                    )),
+                                    )
+                                  ),
                               ],
                             )
                           ],
