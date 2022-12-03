@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class CreditCard_3 extends StatefulWidget {
-  const CreditCard_3({super.key});
+class personalLoan_2 extends StatefulWidget {
+  const personalLoan_2({super.key});
 
   @override
-  State<CreditCard_3> createState() => _CreditCard_3State();
+  State<personalLoan_2> createState() => _personalLoan_2State();
 }
 
-class _CreditCard_3State extends State<CreditCard_3> {
+class _personalLoan_2State extends State<personalLoan_2> {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -30,49 +30,16 @@ class _CreditCard_3State extends State<CreditCard_3> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
                     Text(
-                      'Apply for Credit Card',
+                      'Personal Loan',
                       style: TextStyle(color: Colors.white, fontSize: 33),
                     ),
                     SizedBox(
-                      height:80,
-                    ),
-                    Text(
-                      'Residential Details:',
-                      style: TextStyle(color: Colors.white, fontSize: 20),
-                    ),
-                    SizedBox(
-                      height: 30,
+                      height:150,
                     ),
                     TextFormField(
                       style: TextStyle(color: Colors.grey.shade300),
                       decoration: InputDecoration(
-                          labelText: 'House Number',
-                          hintStyle: TextStyle(color: Colors.grey.shade300),
-                          labelStyle: TextStyle(
-                            color: Colors.grey.shade300,
-                          ),
-                          enabledBorder: OutlineInputBorder(
-                            borderSide: const BorderSide(
-                              width: 2,
-                              color: Color.fromARGB(255, 0, 183, 255),
-                            ),
-                            borderRadius: BorderRadius.circular(15),
-                          ),
-                          focusedBorder: OutlineInputBorder(
-                            borderSide: const BorderSide(
-                              width: 2,
-                              color: Color.fromARGB(255, 0, 183, 255),
-                            ),
-                            borderRadius: BorderRadius.circular(15),
-                          )),
-                    ),
-                    SizedBox(
-                      height: 20,
-                    ),
-                    TextFormField(
-                      style: TextStyle(color: Colors.grey.shade300),
-                      decoration: InputDecoration(
-                          labelText: 'Locality',
+                          labelText: 'Loan Ammount',
                           hintStyle: TextStyle(color: Colors.grey.shade300),
                           labelStyle: TextStyle(
                             color: Colors.grey.shade300,
@@ -99,7 +66,7 @@ class _CreditCard_3State extends State<CreditCard_3> {
                       style: TextStyle(color: Colors.grey.shade300),
                       keyboardType: TextInputType.number,
                       decoration: InputDecoration(
-                          labelText: 'Residental Pin-Code',
+                          labelText: 'Tenure',
                           hintStyle: TextStyle(color: Colors.grey.shade300),
                           labelStyle: TextStyle(
                             color: Colors.grey.shade300,
@@ -124,8 +91,9 @@ class _CreditCard_3State extends State<CreditCard_3> {
                     ),
                     TextFormField(
                       style: TextStyle(color: Colors.grey.shade300),
+                      keyboardType: TextInputType.number,
                       decoration: InputDecoration(
-                          labelText: 'Nationality',
+                          labelText: 'PAN Number',
                           hintStyle: TextStyle(color: Colors.grey.shade300),
                           labelStyle: TextStyle(
                             color: Colors.grey.shade300,
@@ -157,7 +125,7 @@ class _CreditCard_3State extends State<CreditCard_3> {
                         child: IconButton(
                             color: Colors.black,
                             onPressed: () {
-                                Navigator.pushNamed(context, 'CreditCard4');
+                                Navigator.pushNamed(context, 'loanFinal');
                             },
                             icon: Icon(
                               Icons.arrow_forward,

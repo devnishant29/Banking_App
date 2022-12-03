@@ -1,15 +1,15 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, camel_case_types, file_names
 
 import 'package:flutter/material.dart';
 
-class CreditCard_4 extends StatefulWidget {
-  const CreditCard_4({super.key});
+class loan_Final extends StatefulWidget {
+  const loan_Final({super.key});
 
   @override
-  State<CreditCard_4> createState() => _CreditCard_4State();
+  State<loan_Final> createState() => _loan_FinalState();
 }
 
-class _CreditCard_4State extends State<CreditCard_4> {
+class _loan_FinalState extends State<loan_Final> {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -18,6 +18,10 @@ class _CreditCard_4State extends State<CreditCard_4> {
       ),
       child: Scaffold(
         backgroundColor: Colors.transparent,
+        appBar: AppBar(
+          backgroundColor: Colors.transparent,
+          elevation: 0,
+        ),
         body: Stack(
           children: [
             SingleChildScrollView(
@@ -27,25 +31,16 @@ class _CreditCard_4State extends State<CreditCard_4> {
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
-                    SizedBox(
-                      height: 80,
-                    ),
                     Text(
-                      'Credit Card',
-                      style: TextStyle(color: Colors.grey.shade300, fontSize: 33),
+                      'Loan',
+                      style: TextStyle(color: Colors.white, fontSize: 33),
                     ),
                     SizedBox(
-                      height: 40,
+                      height:150,
                     ),
-                    Text(
-                      'Your application for Credit Card has been approved in principle. Your Applicaation reference number **************. ',
-                      textAlign: TextAlign.justify,
-                      style: TextStyle(
-                          color: Color.fromARGB(255, 0, 183, 255),
-                          fontSize: 15),
-                    ),
+                    
                     SizedBox(
-                      height: 350,
+                      height: 100,
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.end,
